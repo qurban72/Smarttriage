@@ -1,0 +1,13 @@
+text,category,urgency
+"I was charged twice for my subscription this month",billing,medium
+"Please refund the extra amount taken from my card",billing,low
+"My card was debited but the order was never placed",billing,high
+"The app crashes every time I open the camera feature",technical,high
+"Login button is not working on my phone",technical,medium
+"Page loads very slowly on Chrome",technical,low
+"I forgot my password and the reset email never arrived",account,medium
+"Please change the email address on my profile",account,low
+"My account is locked and I cannot access my data",account,high
+"Where is my package? It was supposed to arrive yesterday",shipping,medium
+"My order is delayed by two weeks",shipping,low
+"The courier says delivered but I have not received anything",shipping,high

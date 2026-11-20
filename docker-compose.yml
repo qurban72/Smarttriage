@@ -1,0 +1,38 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: smarttriage
+      POSTGRES_PASSWORD: smarttriage
+      POSTGRES_DB: smarttriage
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    env_file: ./backend/.env
+    environment:
+      DATABASE_URL: postgresql://smarttriage:smarttriage@db:5432/smarttriage
+      CORS_ORIGINS: http://localhost:8080,http://localhost:5173
+    ports:
+      - "8000:8000"
+    volumes:
+      - hf-cache:/app/.cache/huggingface
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: http://localhost:8000
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+volumes:
+  pgdata:
+  hf-cache:

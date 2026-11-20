@@ -1,0 +1,27 @@
+[
+  {
+    "id": "faq-001",
+    "question": "How do I get a refund for a duplicate charge?",
+    "answer": "If you were charged twice, please share the transaction IDs. Duplicate charges are refunded within 5-7 business days to your original payment method."
+  },
+  {
+    "id": "faq-002",
+    "question": "How do I reset my password?",
+    "answer": "Click 'Forgot password' on the login page, enter your registered email, and follow the link we send you. The link expires in 30 minutes."
+  },
+  {
+    "id": "faq-003",
+    "question": "Where is my order?",
+    "answer": "You can track your order from the 'My Orders' page. Tracking details are emailed once the package has been dispatched."
+  },
+  {
+    "id": "faq-004",
+    "question": "How do I change my shipping address?",
+    "answer": "Shipping addresses can be changed from 'Account > Addresses' before the order is dispatched. After dispatch, the address cannot be changed."
+  },
+  {
+    "id": "faq-005",
+    "question": "The app keeps crashing on startup. What should I do?",
+    "answer": "Please update the app to the latest version, restart your device, and clear the app cache. If the problem continues, reinstall the app."
+  }
+]
